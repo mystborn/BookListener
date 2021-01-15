@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookListener.Extractors
 {
-    public interface ITextExtractor
+    public class PdfExtractor
     {
-        Task<BookInfo> GetInfoAsync();
-        Task<Book> GetBookAsync();
     }
 }

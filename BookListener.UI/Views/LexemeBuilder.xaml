@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="BookListener.UI.Views.LexemeBuilder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookListener.UI.Views"
+             xmlns:my="clr-namespace:BookListener.UI.ViewModels"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="False"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600">
+    <UserControl.Resources>
+        <DataTemplate x:Key="phonemeTemplate">
+            <Border BorderBrush="LightSlateGray"
+                    BorderThickness="1"
+                    Padding="2">
+                <StackPanel Orientation="Vertical" >
+                    <TextBlock HorizontalAlignment="Center" Text="{Binding Value}" />
+                    <Line />
+                    <TextBlock HorizontalAlignment="Center">
+                        <Run Text="{Binding ExampleWord.Prefix}" />
+                        <Run FontWeight="Bold" Text="{Binding ExampleWord.ExampleSound}" />
+                        <Run Text="{Binding ExampleWord.Suffix}" />
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontSize="16" Text="{Binding Grapheme}" />
+        <ItemsControl HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" ItemsSource="{Binding PhonemeConsonants}" ItemTemplate="{StaticResource ResourceKey=phonemeTemplate}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        <ItemsControl HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" ItemsSource="{Binding PhonemeVowels}" ItemTemplate="{StaticResource ResourceKey=phonemeTemplate}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        <StackPanel Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Prosodies" FontWeight="Bold" FontSize="14" />
+            <ItemsControl HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding PhonemeProsodies}" ItemTemplate="{StaticResource ResourceKey=phonemeTemplate}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6">
+            <ItemsControl HorizontalAlignment="Center" ItemsSource="{Binding Phonemes}" ItemTemplate="{StaticResource ResourceKey=phonemeTemplate}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+            <Border BorderBrush="LightSlateGray"
+                    BorderThickness="1"
+                    Padding="2">
+                <StackPanel Orientation="Vertical" >
+                    <TextBlock HorizontalAlignment="Center" Text="      " />
+                    <Separator />
+                    <TextBlock HorizontalAlignment="Center" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <Grid Grid.Row="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Button Content="Play Phoneme" Grid.Column="1" />
+            <Button Content="Play Grapheme" Grid.Column="3" />
+        </Grid>
+        <Button HorizontalAlignment="Center" Padding="20 0" Content="Save"  Grid.Row="9" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PhonemeAlphabet name="American English (UPS)" alphabet="x-microsoft-ups">
+  <Separator xml:space="preserve"> </Separator>
+  <Consonants>
+    <Phoneme type="Consonant">
+      <Value>AX L</Value>
+      <ExampleWord>
+        <Prefix>whis</Prefix>
+        <ExampleSound>tle</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>W IH S AX L</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>AX M</Value>
+      <ExampleWord>
+        <Prefix>alb</Prefix>
+        <ExampleSound>um</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>AE L B AX M</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>AX N</Value>
+      <ExampleWord>
+        <Prefix>butt</Prefix>
+        <ExampleSound>on</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>B AH T AX N</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>B</Value>
+      <ExampleWord>
+        <ExampleSound>b</ExampleSound>
+        <Suffix>in</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>B IH N</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>CH</Value>
+      <ExampleWord>
+        <ExampleSound>ch</ExampleSound>
+        <Suffix>in</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>CH IH N</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>D</Value>
+      <ExampleWord>
+        <ExampleSound>d</ExampleSound>
+        <Suffix>ate</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>D EI T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>DH</Value>
+      <ExampleWord>
+        <ExampleSound>th</ExampleSound>
+        <Suffix>is</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>DH IH S</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>F</Value>
+      <ExampleWord>
+        <ExampleSound>f</ExampleSound>
+        <Suffix>ax</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>F AE K S</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>G</Value>
+      <ExampleWord>
+        <ExampleSound>g</ExampleSound>
+        <Suffix>ap</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>G AE P</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>H</Value>
+      <ExampleWord>
+        <ExampleSound>h</ExampleSound>
+        <Suffix>elp</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>H EH L P</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>J</Value>
+      <ExampleWord>
+        <ExampleSound>y</ExampleSound>
+        <Suffix>acht</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>J AA T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>JH</Value>
+      <ExampleWord>
+        <ExampleSound>g</ExampleSound>
+        <Suffix>in</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>JH IH N</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>K</Value>
+      <ExampleWord>
+        <ExampleSound>k</ExampleSound>
+        <Suffix>ing</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>K IH NG</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>L</Value>
+      <ExampleWord>
+        <ExampleSound>l</ExampleSound>
+        <Suffix>eg</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>L EH G</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>M</Value>
+      <ExampleWord>
+        <ExampleSound>m</ExampleSound>
+        <Suffix>ail</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>M EI L</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>N</Value>
+      <ExampleWord>
+        <ExampleSound>n</ExampleSound>
+        <Suffix>ose</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>N O + UH Z</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>NG</Value>
+      <ExampleWord>
+        <Prefix>lo</Prefix>
+        <ExampleSound>ng</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>L AO NG</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>P</Value>
+      <ExampleWord>
+        <ExampleSound>p</ExampleSound>
+        <Suffix>in</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>P IH N</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>RA</Value>
+      <ExampleWord>
+        <ExampleSound>r</ExampleSound>
+        <Suffix>ing</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>RA IH NG</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>S</Value>
+      <ExampleWord>
+        <ExampleSound>s</ExampleSound>
+        <Suffix>ing</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>S IH NG</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>SH</Value>
+      <ExampleWord>
+        <ExampleSound>sh</ExampleSound>
+        <Suffix>op</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>SH AA P</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>T</Value>
+      <ExampleWord>
+        <ExampleSound>t</ExampleSound>
+        <Suffix>ip</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>T IH P</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>TH</Value>
+      <ExampleWord>
+        <ExampleSound>th</ExampleSound>
+        <Suffix>ing</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>TH IH NG</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>V</Value>
+      <ExampleWord>
+        <ExampleSound>v</ExampleSound>
+        <Suffix>ery</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>V EH RA I</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>W</Value>
+      <ExampleWord>
+        <ExampleSound>w</ExampleSound>
+        <Suffix>ill</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>W IH L</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>Z</Value>
+      <ExampleWord>
+        <ExampleSound>z</ExampleSound>
+        <Suffix>ip</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>Z IH P</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Consonant">
+      <Value>ZH</Value>
+      <ExampleWord>
+        <Prefix>vi</Prefix>
+        <ExampleSound>si</ExampleSound>
+        <Suffix>on</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>V IH ZH AX N</ExampleTranscription>
+    </Phoneme>
+  </Consonants>
+  <Vowels>
+    <Phoneme type="Vowel">
+      <Value>AA</Value>
+      <ExampleWord>
+        <Prefix>p</Prefix>
+        <ExampleSound>o</ExampleSound>
+        <Suffix>t</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>P AA T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AE</Value>
+      <ExampleWord>
+        <Prefix>f</Prefix>
+        <ExampleSound>a</ExampleSound>
+        <Suffix>t</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>F AE T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AH</Value>
+      <ExampleWord>
+        <Prefix>b</Prefix>
+        <ExampleSound>u</ExampleSound>
+        <Suffix>g</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>B AH G</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AI</Value>
+      <ExampleWord>
+        <Prefix>h</Prefix>
+        <ExampleSound>i</ExampleSound>
+        <Suffix>ve</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>H AI V</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AU</Value>
+      <ExampleWord>
+        <ExampleSound>ou</ExampleSound>
+        <Suffix>t</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>AU T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AO</Value>
+      <ExampleWord>
+        <Prefix>c</Prefix>
+        <ExampleSound>augh</ExampleSound>
+        <Suffix>t</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>K AO T</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AX</Value>
+      <ExampleWord>
+        <Prefix>driv</Prefix>
+        <ExampleSound>e</ExampleSound>
+        <Suffix>r</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>D RA AI V AX RA</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>AX RA</Value>
+      <ExampleWord>
+        <Prefix>runn</Prefix>
+        <ExampleSound>er</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>RA AH N AX RA</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>EH</Value>
+      <ExampleWord>
+        <ExampleSound>e</ExampleSound>
+        <Suffix>gg</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>EH G</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>EH RA</Value>
+      <ExampleWord>
+        <Prefix>h</Prefix>
+        <ExampleSound>air</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>H EH RA</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>EI</Value>
+      <ExampleWord>
+        <Prefix>l</Prefix>
+        <ExampleSound>a</ExampleSound>
+        <Suffix>ke</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>L EI K</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>ER</Value>
+      <ExampleWord>
+        <Prefix>h</Prefix>
+        <ExampleSound>er</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>H ER RA</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>I</Value>
+      <ExampleWord>
+        <Prefix>m</Prefix>
+        <ExampleSound>ea</ExampleSound>
+        <Suffix>l</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>M I L</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>IH</Value>
+      <ExampleWord>
+        <ExampleSound>i</ExampleSound>
+        <Suffix>nk</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>IH NG K</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>O + UH</Value>
+      <ExampleWord>
+        <Prefix>r</Prefix>
+        <ExampleSound>o</ExampleSound>
+        <Suffix>se</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>RA O + UH Z</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>OI</Value>
+      <ExampleWord>
+        <Prefix>t</Prefix>
+        <ExampleSound>oy</ExampleSound>
+      </ExampleWord>
+      <ExampleTranscription>T OI</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>U</Value>
+      <ExampleWord>
+        <Prefix>f</Prefix>
+        <ExampleSound>oo</ExampleSound>
+        <Suffix>d</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>F U D</ExampleTranscription>
+    </Phoneme>
+    <Phoneme type="Vowel">
+      <Value>UH</Value>
+      <ExampleWord>
+        <Prefix>l</Prefix>
+        <ExampleSound>oo</ExampleSound>
+        <Suffix>k</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>L UH K</ExampleTranscription>
+    </Phoneme>
+  </Vowels>
+  <Prosodies>
+    <Phoneme type="Prosody">
+      <Value>S1</Value>
+      <ExampleWord>
+        <ExampleSound>s</ExampleSound>
+        <Suffix>tress</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>S1 S T RA EH S</ExampleTranscription>
+      <Description>primary stress</Description>
+    </Phoneme>
+    <Phoneme type="Prosody">
+      <Value>S2</Value>
+      <ExampleWord>
+        <Prefix>secon</Prefix>
+        <ExampleSound>d</ExampleSound>
+        <Suffix>ary</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>S1 S EH . K AX N . S2 D EH . RA . I</ExampleTranscription>
+      <Description>secondary stress</Description>
+    </Phoneme>
+    <Phoneme type="Prosody">
+      <Value>.</Value>
+      <ExampleWord>
+        <Prefix>vi</Prefix>
+        <ExampleSound>-</ExampleSound>
+        <Suffix>sion</Suffix>
+      </ExampleWord>
+      <ExampleTranscription>S1 V IH . ZH AX N</ExampleTranscription>
+      <Description>syllable break</Description>
+    </Phoneme>
+  </Prosodies>
+</PhonemeAlphabet>

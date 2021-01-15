@@ -14,6 +14,7 @@ namespace BookListener
         public IReadOnlyList<string> Authors { get; }
         public IReadOnlyList<string> Tags { get; }
         public DateTime? Published { get; }
+        public IReadOnlyList<Chapter> Chapters { get; }
         public IReadOnlyList<string> Paragraphs { get; }
 
         public Book(string title,
@@ -22,6 +23,7 @@ namespace BookListener
                     IEnumerable<string> authors,
                     IEnumerable<string> tags,
                     DateTime? published,
+                    IEnumerable<Chapter> chapters,
                     IEnumerable<string> paragraphs)
         {
             Title = title;
@@ -30,7 +32,14 @@ namespace BookListener
             Authors = new List<string>(authors);
             Tags = new List<string>(tags);
             Published = published;
+            Chapters = new List<Chapter>(chapters);
             Paragraphs = new List<string>(paragraphs);
+        }
+
+        public Book(BookInfo bookInfo, IEnumerable<string> paragraphs)
+            : this(bookInfo.Title, bookInfo.Publisher, bookInfo.Series, bookInfo.Authors, 
+                  bookInfo.Tags, bookInfo.Published, bookInfo.Chapters, paragraphs)
+        {
         }
     }
 }

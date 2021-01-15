@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="BookListener.UI.BookSelect"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookListener.UI"
+             xmlns:localConverters="clr-namespace:BookListener.UI.Converters"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <localConverters:StringEmptyHintVisibleConverter x:Key="StringHintConverter" />
+    </UserControl.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File" />
+        </Menu>
+
+        <Grid DockPanel.Dock="Top" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="20" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="5, 2" MinWidth="50" Text="Search..." Foreground="LightSlateGray" 
+                       Visibility="{Binding ElementName=tbxSearhBox, Path=Text.Length, Converter={StaticResource StringHintConverter}}" IsHitTestVisible="False" />
+            <TextBox Name="tbxSearhBox"  Grid.Column="0" Background="Transparent"/>
+            <Button Content="Search" Grid.Column="1" />
+        </Grid>
+        <DataGrid AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" />
+                <DataGridTextColumn Header="Author" />
+                <DataGridTextColumn Header="Tags" />
+                <DataGridTextColumn Header="Publisher" />
+                <DataGridTextColumn Header="Published" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</UserControl>

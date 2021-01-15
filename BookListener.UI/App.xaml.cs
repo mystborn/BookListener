@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Prism.Ioc;
+using Prism.Unity;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -8,10 +10,19 @@ using System.Windows;
 
 namespace BookListener.UI
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
+        // RegisterTypes function is here
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+
+        }
+
+        protected override Window CreateShell()
+        {
+            var window = Container.Resolve<MainWindow>();
+            return window;
+        }
     }
 }
