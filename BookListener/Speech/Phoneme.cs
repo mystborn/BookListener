@@ -14,7 +14,8 @@ namespace BookListener.Speech
     {
         Consonant,
         Vowel,
-        Prosody
+        Prosody,
+        Unknown
     }
 
     public class Phoneme : IXmlSerializable, IEquatable<Phoneme>
@@ -115,6 +116,11 @@ namespace BookListener.Speech
                 return Equals(other);
 
             return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Value.GetHashCode();
         }
     }
 }

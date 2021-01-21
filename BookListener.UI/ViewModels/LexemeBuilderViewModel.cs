@@ -56,6 +56,9 @@ namespace BookListener.UI.ViewModels
         public ICommand PlayGrapheme { get; }
         public ICommand PlayPhoneme { get; }
 
+        public event EventHandler Saved;
+        public event EventHandler Reset;
+
         public LexemeBuilderViewModel(ISpeechService speech)
         {
             _speech = speech;
@@ -63,6 +66,31 @@ namespace BookListener.UI.ViewModels
             PlayPhoneme = new DelegateCommand(OnPlayPhoneme);
 
             SelectedAlphabet = _speech.GetSupportedPhonemeAlphabets().First();
+        }
+
+        public void InitializeWithLexeme(CustomLexeme lexeme)
+        {
+            var alphabet = PhonemeAlphabets.FirstOrDefault(pa => pa.DisplayName == lexeme.PhoneticAlphabet);
+            if (alphabet is null)
+                throw new PhoneticAlphabetMissingException(lexeme.PhoneticAlphabet);
+
+            var phonemes = lexeme.Phonemes.Select(p => FindPhonemeInAlphabet(p, alphabet)).ToList();
+
+            SelectedAlphabet = alphabet;
+            Grapheme = lexeme.Grapheme;
+            Phonemes.AddRange(phonemes);
+        }
+
+        private Phoneme FindPhonemeInAlphabet(string phoneme, PhoneticAlphabet alphabet)
+        {
+            var result = alphabet.Consonants.Concat(alphabet.Vowels)
+                                            .Concat(alphabet.Prosodies)
+                                            .FirstOrDefault(p => p.Value == phoneme);
+
+            if (result is null)
+                throw new InvalidPhonemeException(phoneme, $"Couldn't find phoneme {phoneme} in alphabet {alphabet.DisplayName}");
+
+            return result;
         }
 
         private void OnPlayGrapheme()

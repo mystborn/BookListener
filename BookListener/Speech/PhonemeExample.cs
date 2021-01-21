@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace BookListener.Speech
 {
-    public class PhonemeExample : IXmlSerializable
+    public class PhonemeExample : IXmlSerializable, IEquatable<PhonemeExample>
     {
         public string Prefix { get; private set; } = string.Empty;
         public string ExampleSound { get; private set; } = string.Empty;
@@ -21,9 +21,12 @@ namespace BookListener.Speech
 
         public PhonemeExample(string prefix, string exampleSound, string suffix)
         {
-            Prefix = prefix;
+            if (exampleSound is null)
+                throw new ArgumentNullException(nameof(exampleSound));
+
+            Prefix = prefix ?? string.Empty;
             ExampleSound = exampleSound;
-            Suffix = suffix;
+            Suffix = suffix ?? string.Empty;
         }
 
         public XmlSchema GetSchema()
@@ -56,6 +59,27 @@ namespace BookListener.Speech
 
             if (!string.IsNullOrWhiteSpace(Suffix))
                 writer.WriteElementString("Suffix", Suffix);
+        }
+
+        public bool Equals(PhonemeExample other)
+        {
+            if (other is null)
+                return false;
+
+            return Word == other.Word;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is PhonemeExample pe)
+                return Equals(pe);
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Word.GetHashCode();
         }
     }
 }

@@ -11,5 +11,6 @@ namespace BookListener.Speech
         public string Grapheme { get; set; }
         public string PhoneticAlphabet { get; set; }
         public List<string> Phonemes { get; set; }
+        public List<ProsodyRange> Prosodies { get; set; }
     }
 }

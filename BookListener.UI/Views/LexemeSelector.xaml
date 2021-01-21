@@ -4,9 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BookListener.UI.Views"
+             xmlns:converters="clr-namespace:BookListener.UI.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <UserControl.Resources>
+        <converters:StringEmptyHintVisibleConverter x:Key="StringHintConverter" />
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="9*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Grid>
+                <TextBlock Margin="5, 2" MinWidth="50" Text="Search..." Foreground="LightSlateGray" 
+                       Visibility="{Binding ElementName=tbxSearhBox, Path=Text.Length, Converter={StaticResource StringHintConverter}}" IsHitTestVisible="False" />
+                <TextBox Name="tbxSearhBox"  Grid.Column="0" Background="Transparent"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </UserControl>

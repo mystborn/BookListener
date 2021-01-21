@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace BookListener.UI.Views
 {
     /// <summary>
-    /// Interaction logic for LexemeBuilder.xaml
+    /// Interaction logic for PhonemeTooltip.xaml
     /// </summary>
-    public partial class LexemeBuilder : UserControl
+    public partial class PhonemeTooltip : UserControl
     {
-        public LexemeBuilder()
+        public PhonemeTooltip()
         {
             InitializeComponent();
         }

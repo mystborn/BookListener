@@ -1,5 +1,4 @@
-﻿using BookListener.Speech;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +16,11 @@ using System.Windows.Shapes;
 namespace BookListener.UI.Views
 {
     /// <summary>
-    /// Interaction logic for LexemeBuilder.xaml
+    /// Interaction logic for AddNewLexeme.xaml
     /// </summary>
-    public partial class LexemeBuilder : UserControl
+    public partial class AddNewLexeme : UserControl
     {
-        public LexemeBuilder()
+        public AddNewLexeme()
         {
             InitializeComponent();
         }
